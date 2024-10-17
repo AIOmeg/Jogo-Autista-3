@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo para Crianças Autistas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <button id="play-button">Iniciar Jogo</button>
+        <h1 id="level-title" style="display:none;">Nível 1: Clique no círculo azul</h1>
+        <div id="shapes-container" style="display:none;">
+            <div class="shape circle" id="blue-circle"></div>
+            <div class="shape square" id="green-square"></div>
+            <div class="shape star" id="yellow-star"></div>
+            <div class="shape triangle" id="red-triangle"></div> <!-- Nova Figura -->
+            <div class="shape hexagon" id="purple-hexagon"></div> <!-- Nova Figura -->
+        </div>
+        <div id="feedback"></div>
+        <button id="restart-button" style="display:none;">Reiniciar</button>
+        <div id="report"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

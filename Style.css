@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s; /* Transição para a cor de fundo */
+}
+
+#game {
+    margin-top: 50px;
+}
+
+#level-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#shapes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.circle {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.square {
+    background-color: green;
+}
+
+.star {
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.triangle {
+    background-color: red;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.hexagon {
+    background-color: purple;
+    clip-path: polygon(50% 0%, 80% 25%, 80% 75%, 50% 100%, 20% 75%, 20% 25%);
+}
+
+.shape:hover {
+    transform: scale(1.1);
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#play-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
